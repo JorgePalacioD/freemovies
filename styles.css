@@ -1,10 +1,13 @@
+
 * {
   box-sizing: border-box;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
   margin: 0;
+
   padding: 0;
   color: white;
 }
@@ -160,11 +163,7 @@ padding-left: 2rem;
   display: flex;
   align-items: center;
   padding-left: 6rem;
-
-
 }
-
-
 
 .containerTitle > h2{
 
@@ -197,13 +196,10 @@ footer{
   /* background: linear-gradient(to bottom right,#353742 ,#121425,#353742); */
 background-color: #000000;
 }
-
-
-
-
 .search-lupa >img{
   margin-left: 2rem;
   width: 3rem;
+
 }
 
 .search-input {
@@ -379,9 +375,7 @@ visibility: hidden;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
   gap: 2rem;
   border-radius: 1rem;
-
 }
-
 .nav.visible {
 opacity: 1;
 visibility: visible;
@@ -411,3 +405,4 @@ gap: 2rem;
 }
 
 }
+
