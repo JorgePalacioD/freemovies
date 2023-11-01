@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" href="/imagenes/webIcon.png">
+    <title>FREE MOVIES</title>
+  </head>
+  <body>
+   
+
+    <div class="container-peliculas">
+      <div>
+      <div class="containerLogo">
+        <a href="index.html">
+        <img class="logo" src="imagenes/logo.png" alt="">
+        <img class="logoCel" src="imagenes/webIcon.png" alt="">
+      </a>
+      </div>
+      <div class="containerTitle">
+        <h2 class="title">SERIES</h2>
+    </div>
+      <div class="navbarMovies">
+        <a href="peliculas.html">Peliculas</a> 
+        <a href="index.html">Inicio</a>
+           <div class="containerSearch">
+              <input type="text" class="search-input" placeholder="Buscar...">
+              <a href="#" class="search-lupa"><img src="/imagenes/search.png" alt=""></a>
+              
+            </div>
+            <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt=""></button>
+            <nav class="nav" id="nav">
+              <button class="cerrar-menu" id="cerrar"><img src="imagenes/x.png" alt=""></button>  
+              <img class="imgMenu" src="imagenes/footer.png" alt="">
+                    
+              <ul class="nav-list">
+                <input type="text" class="" placeholder="Buscar...">
+                <hr>
+               <li><a href="peliculas.html">HOME</a></li>
+               <li><a href="series.html">PELICULAS</a></li>
+               <li><a href="">CATEGORIAS</a></li>
+               <li><a href="">ABOUT</a></li>
+               <hr>
+              </ul>
+            </nav>
+            </div>
+          
+    
+  </div>
+      <main>
+        
+        <h2 class="title"> LO RECOMENDADO </h2>
+        <div class="container">
+          <br>
+          <div id="theCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#theCarousel" data-slide-to="1"></li>
+              <li data-target="#theCarousel" data-slide-to="2"></li>
+              <li data-target="#theCarousel" data-slide-to="3"></li>
+    
+            </ol>
+    
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="/imagenesSeries/1.jpg" alt="Ilustracion">
+                </div>
+      
+                <div class="item">
+                  <img src="/imagenesSeries/2.jpg" alt="fotografia">
+                </div>
+      
+                <div class="item">
+                  <img src="/imagenesSeries/3.jpg" alt="pintura">
+                </div>
+      
+                <div class="item">
+                  <img src="imagenesSeries/4.jpg" alt="diseno">
+                </div>
+    
+    
+              <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">anterior</span>
+              </a>
+              <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">siguiente</span>
+              </a>
+            </div>
+          </div>
+           <section class="recommended">
+            <div class="titleRecommended">
+            <h2>Peliculas mas vistas</h2>
+          </div>
+          <div class="boxesMovies">
+          <div class="boxProject">
+            <figure>
+                <img src="/imagenesSeries/1.jpg" alt="">  
+                <div class="capa">
+                  <h3>La Ley y el Orden (1990)</h3>
+                 <p>Serie sobre la investigación de crímenes en la ciudad de Nueva York. Policías y jueces son los principales protagonistas.</p>
+               </div>
+              </figure>
+               </div>
+               <div class="boxProject">
+                <figure>
+                <img src="/imagenesSeries/2.jpg" alt="">  
+                <div class="capa">
+                  <h3>La Ley y el Orden: Unidad de Víctimas Especiales (1999)</h3>
+                 <p>
+                    Serie surgida a la sombra de "Law & Order". Una unidad especial de la policía de Nueva York se dedica a investigar delitos de carácter sexual.</p>
+               </div>
+              </figure>
+               </div>
+               <div class="boxProject">
+                <figure>
+                <img src="/imagenesSeries/3.jpg" alt="">  
+                <div class="capa">
+                  <h3>Loki (2021)</h3>
+                 <p>
+                    Loki es llevado ante la misteriosa organización llamada AVT (Autoridad de Variación Temporal) después de los acontecimientos ocurridos en "Avengers: Endgame (2019)".</p>
+               </div>
+              </figure>
+               </div>
+               <div class="boxProject">
+                <figure>
+                  <img src="/imagenesSeries/4.jpg" alt="">  
+                  <div class="capa">
+                  <h3>NCIS: Criminología Naval (2003)</h3>
+                 <p>Un equipo de agentes especiales del Servicio de Investigación Criminal de la Marina de los Estados Unidos, investiga los crímenes que se cometen dentro del Cuerpo de la Marina.</p>
+               </div>
+              </figure>
+               </div>
+               <div class="boxProject">
+                <figure>
+                  <img src="/imagenesSeries/5.jpg" alt="">  
+                  <div class="capa">
+                  <h3>Rick y Morty (2013)</h3>
+                 <p>Rick Sánchez es un genio científico alcohólico que se ha mudado con la familia de su hija Beth. Él pasa el tiempo con su nieto adolescente Morty en aventuras peligrosas y surrealistas a través del espacio y universos paralelos.</p>
+               </div>
+              </figure>
+               </div>
+              </div>
+              <div class="boxesMovies">
+                <div class="boxProject">
+                  <figure>
+                    <img src="/imagenesSeries/6.jpg" alt="">  
+                    <div class="capa">
+                    <h3>The Blacklist (2013)</h3>
+                   <p>El criminal más buscado del mundo, Thomas Raymond Reddington (James Spader), se entrega misteriosamente y se ofrece a delatar a todos los que alguna vez han colaborado con él.</p>
+                 </div>
+                </figure>
+                 </div>
+                 <div class="boxProject">
+                  <figure>
+                    <img src="/imagenesSeries/7.jpg" alt="">  
+                  <div class="capa">
+                    <h3>CSI: Las Vegas (2000)</h3>
+                   <p>El Departamento de la Policía Científica de Las Vegas, dirigido por el veterano Gil Grisson (William Petersen), debe resolver complicados casos de asesinato, robos, suicidios y violentos crímenes que se producen en la ciudad de Las Vegas.</p>
+                 </div>
+                </figure>
+                 </div>
+                 <div class="boxProject">
+                  <figure>
+                    <img src="/imagenesSeries/8.jpg" alt="">  
+                  <div class="capa">
+                    <h3>Anatomía según Grey (2005)</h3>
+                   <p>La vida de Meredith Grey no es nada fácil. Intenta tomar las riendas de su vida, aunque su trabajo sea de esos que te hacen la vida imposible.</p>
+                 </div>
+                </figure>
+                 </div>
+                 <div class="boxProject">
+                  <figure>
+                    <img src="/imagenesSeries/9.jpg" alt="">  
+                  <div class="capa">
+                    <h3>The Good Doctor (2017)</h3>
+                   <p>La serie sigue a Shaun Murphy, un joven cirujano con autismo y síndrome del sabio de una pequeña ciudad, donde tuvo una infancia problemática.</p>
+                 </div>
+                </figure>
+                 </div>
+                 <div class="boxProject">
+                  <figure>
+                    <img src="/imagenesSeries/10.jpg" alt="">  
+                  <div class="capa">
+                    <h3>The Flash (2014)</h3>
+                   <p>Sigue las veloces aventuras de Barry Allen, un joven común y corriente con el deseo latente de ayudar a los demás.</p>
+                 </div>
+                </figure>
+                 </div>
+                </div>
+                <div class="boxesMovies">
+                  <div class="boxProject">
+                    <figure>
+                      <img src="/imagenesSeries/11.jpg" alt="">  
+                      <div class="capa">
+                      <h3>Padre de Familia (1999)</h3>
+                     <p>La serie se centra en los Griffin, una familia disfuncional cuyos componentes son: los padres Peter y Lois; sus hijos Meg, Chris, y Stewie; y su perro antropomorfo Brian.</p>
+                   </div>
+                  </figure>
+                   </div>
+                   <div class="boxProject">
+                    <figure>
+                      <img src="/imagenesSeries/12.jpg" alt="">  
+                      <div class="capa">
+                      <h3>El Mentalista (2008)</h3>
+                     <p>Patrick Jane es un hombre que trabaja como médium televisivo hasta que sufre un duro golpe cuando su mujer e hija son asesinadas. El agente Jane será capaz de ver aquello que los demás no pueden.</p>
+                   </div>
+                  </figure>
+                   </div>
+                   <div class="boxProject">
+                    <figure>
+                      <img src="/imagenesSeries/13.jpg" alt="">  
+                      <div class="capa">
+                      <h3>Doctor Who (2005)</h3>
+                     <p>Continuación de la mítica y longeva serie británica que empezó en 1963 y duró hasta 1989. El Doctor es un aventurero que viaja por el tiempo y el espacio.</p>
+                   </div>
+                  </figure>
+                   </div>
+                   <div class="boxProject">
+                    <figure>
+                      <img src="/imagenesSeries/14.jpg" alt="">  
+                      <div class="capa">
+                      <h3>Mentes Criminales (2005)</h3>
+                     <p>Narra las investigaciones de un equipo del FBI que estudia el perfil psicológico de los criminales más importantes de los Estados Unidos para poder capturarlos.</p>
+                   </div>
+                  </figure>
+                   </div>
+                   <div class="boxProject">
+                    <figure>
+                      <img src="/imagenesSeries/15.jpg" alt="">  
+                      <div class="capa">
+                      <h3>Sangre Azul (2010)</h3>
+                     <p>Drama generacional, escrito por dos de los guionistas de "Los Soprano", sobre una familia de policías de Nueva York. Frank (Tom Selleck) es jefe de policía y patriarca de la familia Reagan.</p>
+                   </div>
+                  </figure>
+               </div>
+              </div>
+           
+            </section>
+        
+      </main>
+      <footer>
+        <div class="containerFooter">
+        <div class="about">
+          <p>Acerca de FreeMovies</p>
+          <p>Acerca de FreeMovies TV</p>
+          <p>Empleo</p>
+
+        </div>
+        <div class="about">
+          <p>Condiciones de uso</p>
+          <p>Politica de privacidad y cookies</p>
+          <p>Proceso de autocalificacion de edades</p>
+
+        </div>
+        <div class="about">
+
+          <p>Terminos y condiciones</p>
+          <p>Centro de ayuda</p>
+          <p>Ponte en contacto con nosotros</p>
+        </div>
+
+        <div class="aboutLogo">
+
+          <img src="imagenes/footer.png" alt="">
+        </div>
+      
+      </div>
+        <div class="footerCel">
+          <img src="imagenes/footer.png" alt="">
+        </div>
+
+      </footer>
+    </div>
+<script src="main.js"></script>  </body>
+</html>
