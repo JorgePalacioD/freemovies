@@ -71,6 +71,7 @@ background-image: url(imagenes/background.jpg);
 }
 
 
+
 .boxProject {
   position: relative;
   width: 20rem;
@@ -139,6 +140,13 @@ background-image: url(imagenes/background.jpg);
   position: relative; /* o absolute o fixed, dependiendo de tu diseño */
     z-index: 9999; /
 }
+
+
+
+.filtro{
+  display: none;
+}
+
 
 .boxesMovies {
   display: flex;
