@@ -5,6 +5,7 @@ function removeAccentsAndLowerCase(string) {
 document.addEventListener("keyup", (e) => {
   if (e.target.matches("#buscador")) {
     if (e.key === "Escape") e.target.value = "";
+    
 
     const searchTerm = removeAccentsAndLowerCase(e.target.value);
 
@@ -15,10 +16,25 @@ document.addEventListener("keyup", (e) => {
 
         if (movieTitle.includes(searchTerm)) {
           movie.classList.remove("filtro");
-        } else {
+          document.querySelectorAll(".open-modal").forEach((modalButton) => {
+            modalButton.style.display = "none";
+          });
+        }        
+        else {
           movie.classList.add("filtro");
+          modalButton.style.display = "";
+
         }
       }
     });
   }
 });
+
+
+
+if (!searchTerm) {
+  // Oculta los botones con la clase "open-modal"
+  document.querySelectorAll(".open-modal").forEach((modalButton) => {
+    modalButton.style.display = "none";
+  });
+}
