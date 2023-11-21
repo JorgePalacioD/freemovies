@@ -18,7 +18,7 @@
   <header>
     <div class="header">
       <div class="containerLogo">
-        <a href="intro.html">
+        <a href="index.html">
           <img class="logo" src="imagenes/logo.png" alt="">
           <!-- <img class="logoCel" src="imagenes/webIcon.png" alt=""> -->
         </a>
@@ -60,12 +60,30 @@
           <a href="#" class="search-lupa"><img src="/imagenes/search.png" alt=""></a>
         </div>
 
-        <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt=""></button>
+        <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt="" style="margin-right: 2rem;"></button>
         <nav class="nav" id="nav">
           <button class="cerrar-menu" id="cerrar"><img src="imagenes/x.png" alt=""></button>
           <img class="imgMenu" src="imagenes/footer.png" alt="">
 
-
+          <ul class="nav-list">
+            <input id="buscador" type="text" class="" placeholder="Buscar...">
+            <hr>
+            <li><a href="index.html">INICIO </a></li>
+            <li><a href="peliculas.html">PELICULAS</a></li>
+            <li><a href="series.html">CATEGORIAS</a></li>
+            <li><a href="">ABOUT</a>
+              <ul>
+                <li><a href="/categorias/accion.html">Accion</a></li>
+                <li><a href="/categorias/comedia.html">Comedia</a></li>
+                <li><a href="/categorias/familiar.html">Familiar</a></li>
+                <li><a href="/categorias/infantil.html">Infantil</a></li>
+                <li><a href="/categorias/romance.html">Romance</a></li>
+                <li><a href="/categorias/suspenso.html">Suspenso</a></li>
+                <li><a href="/categorias/terror.html">Terror</a></li>
+              </ul>
+            </li>
+            <hr>
+          </ul>
         </nav>
       </div>
     </div>
@@ -120,6 +138,7 @@
           <h2>Series mas vistas</h2>
         </div>
         <div class="boxesMovies">
+          <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="/imagenesSeries/1.jpg" alt="">
@@ -130,6 +149,18 @@
               </div>
             </figure>
           </div>
+          <button class="open-modal" onclick="openModal('0HEr6JyXm4U')">Ver trailer</button>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+              <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="/imagenesSeries/2.jpg" alt="">
@@ -141,6 +172,18 @@
               </div>
             </figure>
           </div>
+          <button class="open-modal" onclick="openModal('A0zaPASsVr8')">Ver trailer</button>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="/imagenesSeries/3.jpg" alt="">
@@ -152,49 +195,6 @@
               </div>
             </figure>
           </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/4.jpg" alt="">
-              <div class="capa">
-                <h3>NCIS: Criminología Naval (2003)</h3>
-                <p>Un equipo de agentes especiales del Servicio de Investigación Criminal de la Marina de los Estados
-                  Unidos, investiga los crímenes que se cometen dentro del Cuerpo de la Marina.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/5.jpg" alt="">
-              <div class="capa">
-                <h3>Rick y Morty (2013)</h3>
-                <p>Rick Sánchez es un genio científico alcohólico que se ha mudado con la familia de su hija Beth. Él
-                  pasa el tiempo con su nieto adolescente Morty en aventuras peligrosas y surrealistas a través del
-                  espacio y universos paralelos.</p>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="contentTrailer">
-          <button class="open-modal" onclick="openModal('0HEr6JyXm4U')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <button class="open-modal" onclick="openModal('A0zaPASsVr8')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
           <button class="open-modal" onclick="openModal('fM7v_IFaH1g')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -205,6 +205,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/4.jpg" alt="">
+              <div class="capa">
+                <h3>NCIS: Criminología Naval (2003)</h3>
+                <p>Un equipo de agentes especiales del Servicio de Investigación Criminal de la Marina de los Estados
+                  Unidos, investiga los crímenes que se cometen dentro del Cuerpo de la Marina.</p>
+              </div>
+            </figure>
+          </div>
           <button class="open-modal" onclick="openModal('6ra7j5zOISU')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -214,6 +226,19 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/5.jpg" alt="">
+              <div class="capa">
+                <h3>Rick y Morty (2013)</h3>
+                <p>Rick Sánchez es un genio científico alcohólico que se ha mudado con la familia de su hija Beth. Él
+                  pasa el tiempo con su nieto adolescente Morty en aventuras peligrosas y surrealistas a través del
+                  espacio y universos paralelos.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('E8cXKMR9a1Q')">Ver trailer</button>
 
@@ -226,8 +251,11 @@
             </div>
           </div>
         </div>
+        </div>
+    
 
         <div class="boxesMovies">
+          <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="/imagenesSeries/6.jpg" alt="">
@@ -238,6 +266,18 @@
               </div>
             </figure>
           </div>
+          <button class="open-modal" onclick="openModal('-WYdUaK54fU')">Ver trailer</button>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="/imagenesSeries/7.jpg" alt="">
@@ -249,48 +289,6 @@
               </div>
             </figure>
           </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/8.jpg" alt="">
-              <div class="capa">
-                <h3>Anatomía según Grey (2005)</h3>
-                <p>La vida de Meredith Grey no es nada fácil. Intenta tomar las riendas de su vida, aunque su trabajo
-                  sea de esos que te hacen la vida imposible.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/9.jpg" alt="">
-              <div class="capa">
-                <h3>The Good Doctor (2017)</h3>
-                <p>La serie sigue a Shaun Murphy, un joven cirujano con autismo y síndrome del sabio de una pequeña
-                  ciudad, donde tuvo una infancia problemática.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/10.jpg" alt="">
-              <div class="capa">
-                <h3>The Flash (2014)</h3>
-                <p>Sigue las veloces aventuras de Barry Allen, un joven común y corriente con el deseo latente de
-                  ayudar a los demás.</p>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="contentTrailer">
-          <button class="open-modal" onclick="openModal('-WYdUaK54fU')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
           <button class="open-modal" onclick="openModal('eBmm-ABXzpQ')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -300,6 +298,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/8.jpg" alt="">
+              <div class="capa">
+                <h3>Anatomía según Grey (2005)</h3>
+                <p>La vida de Meredith Grey no es nada fácil. Intenta tomar las riendas de su vida, aunque su trabajo
+                  sea de esos que te hacen la vida imposible.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('VftMccvBNkE')">Ver trailer</button>
 
@@ -311,6 +321,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/9.jpg" alt="">
+              <div class="capa">
+                <h3>The Good Doctor (2017)</h3>
+                <p>La serie sigue a Shaun Murphy, un joven cirujano con autismo y síndrome del sabio de una pequeña
+                  ciudad, donde tuvo una infancia problemática.</p>
+              </div>
+            </figure>
+          </div>
           <button class="open-modal" onclick="openModal('Inozc9Oq1bs')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -320,6 +342,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/10.jpg" alt="">
+              <div class="capa">
+                <h3>The Flash (2014)</h3>
+                <p>Sigue las veloces aventuras de Barry Allen, un joven común y corriente con el deseo latente de
+                  ayudar a los demás.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('LmC5pxr9JZY')">Ver trailer</button>
 
@@ -332,7 +366,10 @@
             </div>
           </div>
         </div>
+      </div>
+
         <div class="boxesMovies">
+          <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="/imagenesSeries/11.jpg" alt="">
@@ -343,6 +380,18 @@
               </div>
             </figure>
           </div>
+          <button class="open-modal" onclick="openModal('fQ4OMd2O2Xo')">Ver trailer</button>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="/imagenesSeries/12.jpg" alt="">
@@ -354,48 +403,6 @@
               </div>
             </figure>
           </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/13.jpg" alt="">
-              <div class="capa">
-                <h3>Doctor Who (2005)</h3>
-                <p>Continuación de la mítica y longeva serie británica que empezó en 1963 y duró hasta 1989. El Doctor
-                  es un aventurero que viaja por el tiempo y el espacio.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/14.jpg" alt="">
-              <div class="capa">
-                <h3>Mentes Criminales (2005)</h3>
-                <p>Narra las investigaciones de un equipo del FBI que estudia el perfil psicológico de los criminales
-                  más importantes de los Estados Unidos para poder capturarlos.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="/imagenesSeries/15.jpg" alt="">
-              <div class="capa">
-                <h3>Sangre Azul (2010)</h3>
-                <p>Drama generacional, escrito por dos de los guionistas de "Los Soprano", sobre una familia de
-                  policías de Nueva York. Frank (Tom Selleck) es jefe de policía y patriarca de la familia Reagan.</p>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="contentTrailer">
-          <button class="open-modal" onclick="openModal('fQ4OMd2O2Xo')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
           <button class="open-modal" onclick="openModal('tCpWApgVqbc')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -405,6 +412,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/13.jpg" alt="">
+              <div class="capa">
+                <h3>Doctor Who (2005)</h3>
+                <p>Continuación de la mítica y longeva serie británica que empezó en 1963 y duró hasta 1989. El Doctor
+                  es un aventurero que viaja por el tiempo y el espacio.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('Sh3mFCekSac')">Ver trailer</button>
 
@@ -416,6 +435,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/14.jpg" alt="">
+              <div class="capa">
+                <h3>Mentes Criminales (2005)</h3>
+                <p>Narra las investigaciones de un equipo del FBI que estudia el perfil psicológico de los criminales
+                  más importantes de los Estados Unidos para poder capturarlos.</p>
+              </div>
+            </figure>
+          </div>
           <button class="open-modal" onclick="openModal('0a1CjoDDxok')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -425,6 +456,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="/imagenesSeries/15.jpg" alt="">
+              <div class="capa">
+                <h3>Sangre Azul (2010)</h3>
+                <p>Drama generacional, escrito por dos de los guionistas de "Los Soprano", sobre una familia de
+                  policías de Nueva York. Frank (Tom Selleck) es jefe de policía y patriarca de la familia Reagan.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('ZcEBXcEmkpg')">Ver trailer</button>
 
@@ -437,6 +480,8 @@
             </div>
           </div>
         </div>
+        </div>
+    
       </section>
     </div> 
     <br><br><br><br><br>

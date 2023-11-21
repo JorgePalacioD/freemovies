@@ -184,7 +184,7 @@ padding-left: 2rem;
 .nav > li {
   float:left;
   font-size: 2rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 
@@ -312,6 +312,8 @@ color: #909292;
  color: rgb(255, 255, 255);
   cursor: pointer;
   border: 2px solid  rgb(255, 255, 255);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .open-modal:hover {
@@ -319,24 +321,24 @@ color: #909292;
 }
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
-  background-color: #312e2e;
+  background-color: red;
   margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 40%; 
+  width: 50%;
 }
 
 .close {
@@ -346,12 +348,7 @@ color: #909292;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
+
 .video-container{
   display: flex;
 }
@@ -378,20 +375,44 @@ color: #001aff;
   
   }
 
-.contentTrailer{
-  width: 100%;
-  height: 10rem;
+
+
+.boxMovie{
   display: flex;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-padding-left: 2rem;
-padding-right: 2rem;
+flex-direction: column;
+align-items: center;
 }
+
 
 @media (max-width: 480px) {
 
   @media (max-width: 480px) {
+
+
+   
+
+  
+
+    .modal-content {
+      background-color: red;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Ajusta el ancho para dispositivos móviles según tus necesidades */
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    /* Estilos específicos para el tamaño del iframe en dispositivos móviles */
+    #video {
+      width: 100%; /* Ajusta el ancho del iframe al 100% */
+      height: 100%; /* Ajusta la altura del iframe al 100% */
+    }
 
     .logo{
     position: relative;
