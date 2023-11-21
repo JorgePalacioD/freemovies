@@ -17,14 +17,24 @@ document.addEventListener("input", e => {
       }
     });
 
-    document.querySelectorAll(".open-modal").forEach(modalButton => {
-      modalButton.style.display = "none";
-    });
+    if (searchTerm === "") {
+      document.querySelectorAll(".open-modal").forEach(modalButton => {
+        modalButton.style.display = "";
+      });
 
-    if (e.data === null) {
+      document.getElementById("theCarousel").style.display = "";
+      document.querySelector(".title").style.display = "";
+      document.querySelector(".titleRecommended").style.display = "";
+      document.getElementById("titleRecommended").style.display = "";
+    } else {
       document.querySelectorAll(".open-modal").forEach(modalButton => {
         modalButton.style.display = "none";
       });
+
+      document.getElementById("theCarousel").style.display = "none";
+      document.querySelector(".title").style.display = "none";
+      document.querySelector(".titleRecommended").style.display = "none";
+      document.getElementById("titleRecommended").style.display = "none";
     }
   }
 });
