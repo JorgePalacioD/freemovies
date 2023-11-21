@@ -408,6 +408,9 @@ padding-right: 2rem;
     display: none;
     
     }
+    .carousel-indicators{
+      display: none;
+    }
     
     .containerTitle >h2{
     font-size: 20px;
