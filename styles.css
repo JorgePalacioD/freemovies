@@ -429,6 +429,9 @@ align-items: center;
     display: none;
     
     }
+    .carousel-indicators{
+      display: none;
+    }
     
     .containerTitle >h2{
     font-size: 20px;
