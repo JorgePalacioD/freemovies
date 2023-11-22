@@ -48,13 +48,13 @@
           <a href="#" class="search-lupa"><img src="/imagenes/search.png" alt=""></a>
         </div>
 
-        <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt=""></button>
+        <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt="" style="margin-right: 2rem;"></button>
         <nav class="nav" id="nav">
           <button class="cerrar-menu" id="cerrar"><img src="imagenes/x.png" alt=""></button>
           <img class="imgMenu" src="imagenes/footer.png" alt="">
 
           <ul class="nav-list">
-            <input type="text" class="" placeholder="Buscar...">
+            <input id="buscador" type="text" class="" placeholder="Buscar...">
             <hr>
             <li><a href="">Inicio </a></li>
             <li><a href="peliculas.html">Peliculas</a></li>
@@ -120,6 +120,7 @@
         <h2>Peliculas mas vistas</h2>
       </div>
       <div class="boxesMovies">
+        <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenes/1.jpg" alt="">
@@ -130,6 +131,19 @@
             </div>
           </figure>
         </div>
+        <button class="open-modal" onclick="openModal('j82nrLNvplo')">Ver trailer</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenes/2.jpeg" alt="">
@@ -141,6 +155,18 @@
             </div>
           </figure>
         </div>
+        <button class="open-modal" onclick="openModal('FRrc2X4Uzm4')">Ver trailer</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenes/3.jpeg" alt="">
@@ -152,50 +178,6 @@
             </div>
           </figure>
         </div>
-        <div id="boxProject" class="boxProject">
-          <figure>
-            <img src="imagenes/4.jpeg" alt="">
-            <div class="capa">
-              <h3>Los croods 2</h3>
-              <p>Los Croods, una familia prehistórica en busca de un nuevo hogar seguro, descubre un paraíso
-                amurallado habitado por los Masmejor, enfrentándose a un inesperado desafío para establecerse.</p>
-            </div>
-          </figure>
-        </div>
-        <div id="boxProject" class="boxProject">
-          <figure>
-            <img src="imagenes/5.jpeg" alt="">
-            <div class="capa">
-              <h3>El orfanato</h3>
-              <p>Laura regresa al orfanato de su infancia para abrir una residencia para niños discapacitados. Sin
-                embargo, su hijo desaparece y meses después, escucha voces de espíritus que cree que pueden ayudarla
-                a encontrarlo.</p>
-            </div>
-          </figure>
-        </div>
-      </div>
-
-      <div class="contentTrailer">
-        <button class="open-modal" onclick="openModal('j82nrLNvplo')">Ver trailer</button>
-
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="video-container">
-              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <button class="open-modal" onclick="openModal('FRrc2X4Uzm4')">Ver trailer</button>
-
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="video-container">
-              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
         <button class="open-modal" onclick="openModal('5rIytmXOO7Q')">Ver trailer</button>
 
         <div id="myModal" class="modal">
@@ -206,6 +188,18 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="boxMovie">
+        <div id="boxProject" class="boxProject">
+          <figure>
+            <img src="imagenes/4.jpeg" alt="">
+            <div class="capa">
+              <h3>Los croods 2</h3>
+              <p>Los Croods, una familia prehistórica en busca de un nuevo hogar seguro, descubre un paraíso
+                amurallado habitado por los Masmejor, enfrentándose a un inesperado desafío para establecerse.</p>
+            </div>
+          </figure>
+        </div>
         <button class="open-modal" onclick="openModal('tplddmYEgMM')">Ver trailer</button>
 
         <div id="myModal" class="modal">
@@ -215,6 +209,19 @@
               <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="boxMovie">
+        <div id="boxProject" class="boxProject">
+          <figure>
+            <img src="imagenes/5.jpeg" alt="">
+            <div class="capa">
+              <h3>El orfanato</h3>
+              <p>Laura regresa al orfanato de su infancia para abrir una residencia para niños discapacitados. Sin
+                embargo, su hijo desaparece y meses después, escucha voces de espíritus que cree que pueden ayudarla
+                a encontrarlo.</p>
+            </div>
+          </figure>
         </div>
         <button class="open-modal" onclick="openModal('9qjHkkffOx8')">Ver trailer</button>
 
@@ -227,11 +234,13 @@
           </div>
         </div>
       </div>
-      <div class="titleRecommended">
+      </div>
+      <div id="titleRecommended" class="titleRecommended">
         <h2>Series mas vistas</h2>
       </div>
 
       <div class="boxesMovies">
+        <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenesSeries/1.jpg" alt="">
@@ -242,6 +251,19 @@
             </div>
           </figure>
         </div>
+        
+        <button class="open-modal" onclick="openModal('0HEr6JyXm4U')">Ver trailer</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenesSeries/3.jpg" alt="">
@@ -253,6 +275,18 @@
             </div>
           </figure>
         </div>
+        <button class="open-modal" onclick="openModal('fM7v_IFaH1g')">Ver trailer</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenesSeries/12.jpg" alt="">
@@ -264,6 +298,18 @@
             </div>
           </figure>
         </div>
+        <button class="open-modal" onclick="openModal('tCpWApgVqbc')">Ver trailer</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenesSeries/5.jpg" alt="">
@@ -275,6 +321,18 @@
             </div>
           </figure>
         </div>
+        <button class="open-modal" onclick="openModal('E8cXKMR9a1Q')">Ver trailer</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxMovie">
         <div id="boxProject" class="boxProject">
           <figure>
             <img src="imagenesSeries/7.jpg" alt="">
@@ -288,48 +346,6 @@
 
           </figure>
         </div>
-      </div>
-      <div class="contentTrailer">
-        <button class="open-modal" onclick="openModal('0HEr6JyXm4U')">Ver trailer</button>
-
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="video-container">
-              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <button class="open-modal" onclick="openModal('fM7v_IFaH1g')">Ver trailer</button>
-
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="video-container">
-              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <button class="open-modal" onclick="openModal('tCpWApgVqbc')">Ver trailer</button>
-
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="video-container">
-              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <button class="open-modal" onclick="openModal('E8cXKMR9a1Q')">Ver trailer</button>
-
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="video-container">
-              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
         <button class="open-modal" onclick="openModal('eBmm-ABXzpQ')">Ver trailer</button>
 
         <div id="myModal" class="modal">
@@ -340,6 +356,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
 
     </div>

@@ -18,7 +18,7 @@
   <header>
     <div class="header">
       <div class="containerLogo">
-        <a href="intro.html">
+        <a href="index.html">
           <img class="logo" src="imagenes/logo.png" alt="">
           <!-- <img class="logoCel" src="imagenes/webIcon.png" alt=""> -->
         </a>
@@ -60,14 +60,15 @@
           <a href="#" class="search-lupa"><img src="/imagenes/search.png" alt=""></a>
         </div>
 
-        <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt=""></button>
+        <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt="" style="margin-right: 2rem;"></button>
         <nav class="nav" id="nav">
           <button class="cerrar-menu" id="cerrar"><img src="imagenes/x.png" alt=""></button>
           <img class="imgMenu" src="imagenes/footer.png" alt="">
 
           <ul class="nav-list">
-            <input type="text" class="" placeholder="Buscar...">
+            <input id="buscador" type="text" class="" placeholder="Buscar...">
             <hr>
+
             <li><a href="index.html">Inicio </a></li>
             <li><a href="peliculas.html">Peliculas</a></li>
             <li><a href="series.html">Series</a></li>
@@ -84,6 +85,9 @@
             
             </li>
             
+
+            
+
             <hr>
           </ul>
         </nav>
@@ -138,6 +142,7 @@
           <h2>Peliculas mas vistas</h2>
         </div>
         <div class="boxesMovies">
+          <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/1.jpg" alt="">
@@ -145,12 +150,21 @@
                 <h3>Más allá del universo</h3>
                 <p>Mientras espera un trasplante de riñón, una joven pianista encuentra una conexión inesperada con su
                   médico, y el valor para cumplir sus sueños musicales.</p>
-
               </div>
             </figure>
           </div>
-
-
+          <button class="open-modal" onclick="openModal('j82nrLNvplo')">Ver trailer</button>
+  
+          <div id="myModal" class="modal">
+            <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+              <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/2.jpeg" alt="">
@@ -162,7 +176,18 @@
               </div>
             </figure>
           </div>
-
+          <button class="open-modal" onclick="openModal('FRrc2X4Uzm4')">Ver trailer</button>
+  
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/3.jpeg" alt="">
@@ -174,7 +199,18 @@
               </div>
             </figure>
           </div>
-
+          <button class="open-modal" onclick="openModal('5rIytmXOO7Q')">Ver trailer</button>
+  
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/4.jpeg" alt="">
@@ -185,63 +221,31 @@
               </div>
             </figure>
           </div>
+          <button class="open-modal" onclick="openModal('tplddmYEgMM')">Ver trailer</button>
+  
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/5.jpeg" alt="">
               <div class="capa">
                 <h3>El orfanato</h3>
                 <p>Laura regresa al orfanato de su infancia para abrir una residencia para niños discapacitados. Sin
-                  embargo, su hijo desaparece y meses después, escucha voces de espíritus que cree que pueden ayudarla a
-                  encontrarlo.</p>
+                  embargo, su hijo desaparece y meses después, escucha voces de espíritus que cree que pueden ayudarla
+                  a encontrarlo.</p>
               </div>
             </figure>
           </div>
-
-
-        </div>
-        <div class="contentTrailer">
-          <button class="open-modal" onclick="openModal('j82nrLNvplo')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <button class="open-modal" onclick="openModal('FRrc2X4Uzm4')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <button class="open-modal" onclick="openModal('5rIytmXOO7Q')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <button class="open-modal" onclick="openModal('tplddmYEgMM')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
           <button class="open-modal" onclick="openModal('9qjHkkffOx8')">Ver trailer</button>
-
+  
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close" onclick="closeModal()">&times;</span>
@@ -250,8 +254,10 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div class="boxesMovies">
+          <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/6.jpeg" alt="">
@@ -262,48 +268,6 @@
               </div>
             </figure>
           </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/7.jpeg" alt="">
-              <div class="capa">
-                <h3>Elementos</h3>
-                <p>En una ciudad donde los elementos viven separados, una chica de fuego y un chico de agua descubren
-                  que tienen mucho en común.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/8.jpeg" alt="">
-              <div class="capa">
-                <h3>El día del si</h3>
-                <p>Allison y Carlos dan un YES DAY a sus tres hijos, permitiéndoles mandar durante 24 horas. Esta
-                  aventura en Los Ángeles une a la familia más que nunca</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/9.jpeg" alt="">
-              <div class="capa">
-                <h3>La monja 2</h3>
-                <p>Tras el asesinato de un sacerdote, las fuerzas del mal se están extendiendo. La hermana Irene una vez
-                  más se encuentra cara a cara con Valak, la monja demonio.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/10.jpeg" alt="">
-              <div class="capa">
-                <h3>Extraction</h3>
-                <p>Tyler Rake, un intrépido mercenario del mercado negro, se embarca en la extracción más mortal de su
-                  carrera para rescatar al hijo secuestrado de un criminal internacional.</p>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="contentTrailer">
           <button class="open-modal" onclick="openModal('yTvyNBtrOY4')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -313,6 +277,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/7.jpeg" alt="">
+              <div class="capa">
+                <h3>Elementos</h3>
+                <p>En una ciudad donde los elementos viven separados, una chica de fuego y un chico de agua descubren
+                  que tienen mucho en común.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('MgzHRIeaOL8')">Ver trailer</button>
 
@@ -324,6 +300,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/8.jpeg" alt="">
+              <div class="capa">
+                <h3>El día del si</h3>
+                <p>Allison y Carlos dan un YES DAY a sus tres hijos, permitiéndoles mandar durante 24 horas. Esta
+                  aventura en Los Ángeles une a la familia más que nunca</p>
+              </div>
+            </figure>
+          </div>
           <button class="open-modal" onclick="openModal('4J0Of6wqzxk')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -333,6 +321,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/9.jpeg" alt="">
+              <div class="capa">
+                <h3>La monja 2</h3>
+                <p>Tras el asesinato de un sacerdote, las fuerzas del mal se están extendiendo. La hermana Irene una vez
+                  más se encuentra cara a cara con Valak, la monja demonio.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('pdrPvHulyUY')">Ver trailer</button>
 
@@ -344,6 +344,19 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/10.jpeg" alt="">
+              <div class="capa">
+                <h3>Extraction</h3>
+                <p>Tyler Rake, un intrépido mercenario del mercado negro, se embarca en la extracción más mortal de su
+                  carrera para rescatar al hijo secuestrado de un criminal internacional.</p>
+              </div>
+            </figure>
+          </div>
+          
           <button class="open-modal" onclick="openModal('MPywd1FVFd0')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -354,9 +367,11 @@
               </div>
             </div>
           </div>
-
         </div>
+        </div>
+        
         <div class="boxesMovies">
+          <div class="boxMovie">
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/11.jpeg" alt="">
@@ -367,48 +382,6 @@
               </div>
             </figure>
           </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/12.jpeg" alt="">
-              <div class="capa">
-                <h3>Son como niños</h3>
-                <p>"La muerte del entrenador de baloncesto reúne a viejos amigos en el lugar donde ganaron un
-                  campeonato. Hablan de esposas, hijos y descubren que la edad no siempre significa madurez."</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/13.jpeg" alt="">
-              <div class="capa">
-                <h3>Mi pobre angelito</h3>
-                <p>un niño llamado Kevin es olvidado accidentalmente por su familia durante las vacaciones de Navidad.
-                  Mientras está solo en casa, se enfrenta a dos ladrones torpes que intentan saquear su hogar</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/14.png" alt="">
-              <div class="capa">
-                <h3>La vieja guardia</h3>
-                <p>Un grupo de mercenarios, todos inmortales y con la capacidad de curarse a sí mismos, descubren que
-                  alguien sabe su secreto y deben luchar para proteger su libertad.</p>
-              </div>
-            </figure>
-          </div>
-          <div id="boxProject" class="boxProject">
-            <figure>
-              <img src="imagenes/15.jpg" alt="">
-              <div class="capa">
-                <h3>Intrusion</h3>
-                <p>Tras una invasión trágica en su casa, una mujer busca respuestas y descubre que la pesadilla apenas
-                  comienza.</p>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="contentTrailer">
           <button class="open-modal" onclick="openModal('umy5STfwMj0')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -418,6 +391,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/12.jpeg" alt="">
+              <div class="capa">
+                <h3>Son como niños</h3>
+                <p>"La muerte del entrenador de baloncesto reúne a viejos amigos en el lugar donde ganaron un
+                  campeonato. Hablan de esposas, hijos y descubren que la edad no siempre significa madurez."</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('yMEDiKD7cyE')">Ver trailer</button>
 
@@ -429,6 +414,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/13.jpeg" alt="">
+              <div class="capa">
+                <h3>Mi pobre angelito</h3>
+                <p>un niño llamado Kevin es olvidado accidentalmente por su familia durante las vacaciones de Navidad.
+                  Mientras está solo en casa, se enfrenta a dos ladrones torpes que intentan saquear su hogar</p>
+              </div>
+            </figure>
+          </div>
           <button class="open-modal" onclick="openModal('I-zoVUYHPMM')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -438,6 +435,18 @@
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/14.png" alt="">
+              <div class="capa">
+                <h3>La vieja guardia</h3>
+                <p>Un grupo de mercenarios, todos inmortales y con la capacidad de curarse a sí mismos, descubren que
+                  alguien sabe su secreto y deben luchar para proteger su libertad.</p>
+              </div>
+            </figure>
           </div>
           <button class="open-modal" onclick="openModal('OCDhMOrCEoc')">Ver trailer</button>
 
@@ -449,6 +458,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="boxMovie">
+          <div id="boxProject" class="boxProject">
+            <figure>
+              <img src="imagenes/15.jpg" alt="">
+              <div class="capa">
+                <h3>Intrusion</h3>
+                <p>Tras una invasión trágica en su casa, una mujer busca respuestas y descubre que la pesadilla apenas
+                  comienza.</p>
+              </div>
+            </figure>
+          </div>
           <button class="open-modal" onclick="openModal('DTUsaltziFA')">Ver trailer</button>
 
           <div id="myModal" class="modal">
@@ -459,9 +480,9 @@
               </div>
             </div>
           </div>
-
-
+          </div>
         </div>
+      
       </section>
       <br><br><br><br><br><br>
     </div>
