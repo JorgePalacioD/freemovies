@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="icon" href="/imagenes/webIcon.png">
     <title>FREE MOVIES</title>
 </head>
@@ -75,7 +79,8 @@
         <h2 class="title"> SUSPENSO </h2>
         <div class="container">
             <br>
-            <div class="boxesMovies">
+            <div style="height: 50rem;" class="boxesMovies">
+                <div class="boxMovie">
                 <div class="boxProject">
                     <figure>
                       <img src="../imagenes/3.jpeg" alt="">
@@ -87,6 +92,36 @@
                       </div>
                     </figure>
                   </div>
+  
+                  <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/5rIytmXOO7Q">
+                    Ver trailer        </button>
+                    <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+              
+                              <!-- Encabezado del modal -->
+                              <div class="modal-header">
+                                  <h4 class="modal-title">Trailer</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+              
+                              <!-- Contenido del modal (iframe con el video) -->
+                              <div class="modal-body">
+                                  <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                              </div>
+              
+                              <!-- Pie del modal -->
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                              </div>
+              
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="boxMovie">
                   <div class="boxProject">
                     <figure>
                       <img src="../imagenes/15.jpg" alt="">
@@ -97,7 +132,10 @@
                       </div>
                     </figure>
                   </div>
-
+  
+                  <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/DTUsaltziFA">
+                    Ver trailer        </button>
+                  </div>
             </div>
             <br>
     </main>
@@ -135,6 +173,7 @@
 
     </footer>
 
+    <script src="../modal.js"></script>
     <script src="main.js"></script>
     <script src="peliculas.js"></script>
 </body>

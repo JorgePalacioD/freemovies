@@ -48,7 +48,7 @@ header {
 
 .recommended {
   width: 100%;
-  height: 120rem;
+  height: 125rem;
   display: flex;
   flex-direction: column;
 }
@@ -280,12 +280,13 @@ footer {
 
 .open-modal {
   width: 10rem;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(48, 48, 66);
   color: rgb(255, 255, 255);
   cursor: pointer;
-  border: 2px solid rgb(255, 255, 255);
-  margin-top: 2rem;
+border: 2px solid #4874ec;  
+margin-top: 3rem;
   margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 .open-modal:hover {
@@ -293,24 +294,27 @@ footer {
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
 }
 
 .modal-content {
-  background-color: red;
-  margin: 15% auto;
+  background-color: #312e2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 48%; 
 }
 
 .close {
@@ -320,8 +324,11 @@ footer {
   font-weight: bold;
 }
 
-.video-container {
-  display: flex;
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .descriptionTrailer {
@@ -349,33 +356,60 @@ footer {
   align-items: center;
 }
 
+.modal-title{
+  color: white;
+}
+
+.modal-dialog{
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body{
+  background-color: #353742;
+
+}
+
+.modal-header{
+  background-color: #353742;
+}
+
+.modal-footer{
+  background-color: #353742;
+}
+
+
+#btn-primary{
+  margin-top: 3rem;
+  width: 10rem;
+  height: 2rem;
+  background-color: rgb(48, 48, 66);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+border: 2px solid #4874ec;  
+margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+
+
 @media (max-width: 480px) {
-  .modal-content {
-    background-color: red;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Ajusta el ancho para dispositivos móviles según tus necesidades */
-    height: 25%;
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    left: 50%;
-    top: 50%;
+
+
+
+  .modal-dialog{
+    position: relative;
+    bottom: 38rem;
   }
 
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  /* Estilos específicos para el tamaño del iframe en dispositivos móviles */
-  #video {
-    width: 100%; /* Ajusta el ancho del iframe al 100% */
-    height: 100%; /* Ajusta la altura del iframe al 100% */
-  }
-
+  
   .logo {
     position: relative;
     right: 5rem;
