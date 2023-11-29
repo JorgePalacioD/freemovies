@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="icon" href="/imagenes/webIcon.png">
   <title>FREE MOVIES</title>
 </head>
@@ -66,7 +70,7 @@
           <img class="imgMenu" src="imagenes/footer.png" alt="">
 
           <ul class="nav-list">
-            <input id="buscador" type="text" class="" placeholder="Buscar...">
+            <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
             <hr>
 
             <li><a href="index.html">Inicio </a></li>
@@ -142,7 +146,9 @@
           <h2>Peliculas mas vistas</h2>
         </div>
         <div class="boxesMovies">
+          <h2  id="resultsMessage" style="color: antiquewhite; font-weight: bold; font-size: 30px; display: none;">NO HAY RESULTADOS DE TU BUSQUEDA</h2>
           <div class="boxMovie">
+            <h3 style="display: none;">Más allá del universo</h3>
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/1.jpg" alt="">
@@ -153,18 +159,37 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('j82nrLNvplo')">Ver trailer</button>
-  
-          <div id="myModal" class="modal">
-            <div class="modal-content" style="background-color: rgb(48, 45, 45);">
-              <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/j82nrLNvplo">
+            Ver trailer        </button>
+            <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
               </div>
-            </div>
           </div>
         </div>
         <div class="boxMovie">
+          <h3 style="display: none;">Yo antes de ti</h3>
+
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/2.jpeg" alt="">
@@ -176,18 +201,37 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('FRrc2X4Uzm4')">Ver trailer</button>
-  
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/FRrc2X4Uzm4">
+            Ver trailer        </button>
+            <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
               </div>
-            </div>
           </div>
         </div>
         <div class="boxMovie">
+          <h3 style="display: none;">La isla de la fantasia</h3>
+
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/3.jpeg" alt="">
@@ -199,18 +243,12 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('5rIytmXOO7Q')">Ver trailer</button>
-  
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/5rIytmXOO7Q">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
+          <h3 style="display: none;">Los croods 2</h3>
+
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/4.jpeg" alt="">
@@ -221,18 +259,12 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('tplddmYEgMM')">Ver trailer</button>
-  
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/tplddmYEgMM">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
+          <h3 style="display: none;">El orfanato</h3>
+
           <div id="boxProject" class="boxProject">
             <figure>
               <img src="imagenes/5.jpeg" alt="">
@@ -244,16 +276,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('9qjHkkffOx8')">Ver trailer</button>
-  
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/9qjHkkffOx8">
+            Ver trailer        </button>
         </div>
         </div>
         <div class="boxesMovies">
@@ -268,16 +292,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('yTvyNBtrOY4')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/BrUTRhIvcQY">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -290,16 +306,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('MgzHRIeaOL8')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/MgzHRIeaOL8">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -312,16 +320,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('4J0Of6wqzxk')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/4J0Of6wqzxk">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -334,16 +334,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('pdrPvHulyUY')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/pdrPvHulyUY">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -357,16 +349,8 @@
             </figure>
           </div>
           
-          <button class="open-modal" onclick="openModal('MPywd1FVFd0')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/MPywd1FVFd0">
+            Ver trailer        </button>
         </div>
         </div>
         
@@ -382,16 +366,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('umy5STfwMj0')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/umy5STfwMj0">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -404,16 +380,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('yMEDiKD7cyE')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/yMEDiKD7cyE">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -426,16 +394,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('I-zoVUYHPMM')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/I-zoVUYHPMM">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -448,16 +408,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('OCDhMOrCEoc')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/OCDhMOrCEoc">
+            Ver trailer        </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -470,16 +422,8 @@
               </div>
             </figure>
           </div>
-          <button class="open-modal" onclick="openModal('DTUsaltziFA')">Ver trailer</button>
-
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <div class="video-container">
-                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/DTUsaltziFA">
+            Ver trailer        </button>
           </div>
         </div>
       
