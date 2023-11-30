@@ -21,7 +21,7 @@
   <header>
     <div class="header">
       <div class="containerLogo">
-        <a href="intro.html">
+        <a href="/intro.html">
           <img class="logo" src="imagenes/logo.png" alt="">
         </a>
       </div>
@@ -32,7 +32,7 @@
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/peliculas.html">Peliculas</a></li>
             <li><a href="/series.html">Series</a></li>
-            <li><a href="">Categorias</a>
+            <li><a href="#">Categorias</a>
               <ul>
                 <li><a href="/categorias/accion.html">Accion</a></li>
                 <li><a href="/categorias/comedia.html">Comedia</a></li>
@@ -58,7 +58,10 @@
           <img class="imgMenu" src="imagenes/footer.png" alt="">
 
           <ul class="nav-list">
-            <input id="buscador" type="text" class="" placeholder="Buscar...">
+
+            <input type="text" name="buscador" id="buscadorMenu" class="search-input-hamburguesa" placeholder="Buscar...">
+            <a href="#" class="search-lupa-hamburguesa"><img src="/imagenes/search.png" alt=""></a>
+
             <hr>
             <li><a href="">Inicio </a></li>
             <li><a href="peliculas.html">Peliculas</a></li>
@@ -124,9 +127,11 @@
         <h2>Peliculas mas vistas</h2>
       </div>
       <div class="boxesMovies">
-        <h2  id="resultsMessage" style="color: antiquewhite; font-weight: bold; font-size: 30px; display: none;">NO HAY RESULTADOS DE TU BUSQUEDA</h2>
+        <h2 id="resultsMessage" style="color: antiquewhite; font-weight: bold; font-size: 30px; display: none;">NO HAY
+          RESULTADOS DE TU BUSQUEDA</h2>
         <div class="boxMovie">
-          <div id="boxProject" class="boxProject">
+
+          <div id="boxProject1" class="boxProject">
             <figure>
               <img src="imagenes/1.jpg" alt="">
               <div class="capa">
@@ -136,41 +141,42 @@
               </div>
             </figure>
           </div>
-         
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/j82nrLNvplo">
-Ver trailer        </button>
-    
-       
-    
-        <!-- Modal -->
-        <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+          <button type="button" id="btn-primary1" class="btn btn-primary" data-toggle="modal" data-target="#videoModal1"
+            data-video-src="https://www.youtube.com/embed/j82nrLNvplo">
+            Ver trailer </button>
+
+          <!-- Modal -->
+          <div class="modal" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
-    
-                    <!-- Encabezado del modal -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Trailer</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-    
-                    <!-- Contenido del modal (iframe con el video) -->
-                    <div class="modal-body">
-                        <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
-                    </div>
-    
-                    <!-- Pie del modal -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    </div>
-    
+              <div class="modal-content">
+
+                <!-- Encabezado del modal -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Trailer</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+
+                <!-- Contenido del modal (iframe con el video) -->
+                <div class="modal-body">
+                  <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Pie del modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+
+              </div>
             </div>
+          </div>
         </div>
-        </div>
+
         <div class="boxMovie">
-          <div id="boxProject" class="boxProject">
+          <div id="boxProject2" class="boxProject">
             <figure>
               <img src="imagenes/2.jpeg" alt="">
               <div class="capa">
@@ -181,33 +187,35 @@ Ver trailer        </button>
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/FRrc2X4Uzm4">
-Ver trailer        </button>
-<div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
+          <button type="button" id="btn-primary2" class="btn btn-primary" data-toggle="modal" data-target="#videoModal2"
+            data-video-src="https://www.youtube.com/embed/FRrc2X4Uzm4">
+            Ver trailer </button>
+          <div class="modal" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
 
-          <!-- Encabezado del modal -->
-          <div class="modal-header">
-              <h4 class="modal-title">Trailer</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                  <span aria-hidden="true">&times;</span>
-              </button>
+                <!-- Encabezado del modal -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Trailer</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <!-- Contenido del modal (iframe con el video) -->
+                <div class="modal-body">
+                  <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Pie del modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+
+              </div>
+            </div>
           </div>
-
-          <!-- Contenido del modal (iframe con el video) -->
-          <div class="modal-body">
-              <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
-          </div>
-
-          <!-- Pie del modal -->
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          </div>
-
-      </div>
-  </div>
-</div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -221,8 +229,9 @@ Ver trailer        </button>
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/5rIytmXOO7Q">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/5rIytmXOO7Q">
+            Ver trailer </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -235,8 +244,9 @@ Ver trailer        </button>
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/tplddmYEgMM">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/tplddmYEgMM">
+            Ver trailer </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -250,8 +260,9 @@ Ver trailer        </button>
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/9qjHkkffOx8">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/9qjHkkffOx8">
+            Ver trailer </button>
         </div>
       </div>
       <div id="titleRecommended" class="titleRecommended">
@@ -271,8 +282,9 @@ Ver trailer        </button>
             </figure>
           </div>
 
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/0HEr6JyXm4U">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/0HEr6JyXm4U">
+            Ver trailer </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -286,8 +298,9 @@ Ver trailer        </button>
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/KcBStos46EM">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/KcBStos46EM">
+            Ver trailer </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -301,8 +314,9 @@ Ver trailer        </button>
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/tCpWApgVqbc">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/tCpWApgVqbc">
+            Ver trailer </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -310,12 +324,14 @@ Ver trailer        </button>
               <img src="imagenesSeries/5.jpg" alt="">
               <div class="capa">
                 <h3>Rick y Morty (2013)</h3>
-                <p>Rick, un genio científico alcohólico, dedica su tiempo a emprender aventuras peligrosas y surrealistas junto a su nieto adolescente Morty, explorando el espacio y universos paralelos.</p>
+                <p>Rick, un genio científico alcohólico, dedica su tiempo a emprender aventuras peligrosas y
+                  surrealistas junto a su nieto adolescente Morty, explorando el espacio y universos paralelos.</p>
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/E8cXKMR9a1Q">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/E8cXKMR9a1Q">
+            Ver trailer </button>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -323,14 +339,16 @@ Ver trailer        </button>
               <img src="imagenesSeries/7.jpg" alt="">
               <div class="capa">
                 <h3>CSI: Las Vegas (2000)</h3>
-                <p>"El equipo de Gil Grissom en la Policía Científica de Las Vegas resuelve diversos casos criminales en la ciudad."</p>
+                <p>"El equipo de Gil Grissom en la Policía Científica de Las Vegas resuelve diversos casos criminales en
+                  la ciudad."</p>
               </div>
 
 
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/eBmm-ABXzpQ">
-            Ver trailer        </button>
+          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal"
+            data-video-src="https://www.youtube.com/embed/eBmm-ABXzpQ">
+            Ver trailer </button>
         </div>
       </div>
 
@@ -367,7 +385,7 @@ Ver trailer        </button>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
   <script src="main.js"></script>
   <script src="modal.js"></script>
 </body>

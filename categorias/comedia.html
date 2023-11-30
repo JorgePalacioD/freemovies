@@ -20,124 +20,141 @@
 
     <header>
         <div class="header">
-            <div class="containerLogo">
-                <a href="intro.html">
-                    <img class="logo" src="../imagenes/logo.png" alt="">
-                    <!-- <img class="logoCel" src="imagenes/webIcon.png" alt=""> -->
-                </a>
+          <div class="containerLogo">
+            <a href="/intro.html">
+              <img class="logo" src="imagenes/logo.png" alt="">
+            </a>
+          </div>
+    
+          <div class="navbarMovies">
+            <div id="header">
+              <ul class="nav">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/peliculas.html">Peliculas</a></li>
+                <li><a href="/series.html">Series</a></li>
+                <li><a href="#">Categorias</a>
+                  <ul>
+                    <li><a href="/categorias/accion.html">Accion</a></li>
+                    <li><a href="/categorias/comedia.html">Comedia</a></li>
+                    <li><a href="/categorias/familiar.html">Familiar</a></li>
+                    <li><a href="/categorias/infantil.html">Infantil</a></li>
+                    <li><a href="/categorias/romance.html">Romance</a></li>
+                    <li><a href="/categorias/suspenso.html">Suspenso</a></li>
+                    <li><a href="/categorias/terror.html">Terror</a></li>
+    
+                  </ul>
+                </li>
+              </ul>
             </div>
-
-            <div class="navbarMovies">
-
-                <div id="header">
-                    <ul class="nav">
-                        <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/peliculas.html">Peliculas</a></li>
-                        <li><a href="/series.html">Series</a></li>
-                        <li><a href="">Categorias</a>
-                            <ul>
-                                <li><a href="/categorias/accion.html">Accion</a></li>
-                                <li><a href="/categorias/comedia.html">Comedia</a></li>
-                                <li><a href="/categorias/familiar.html">Familiar</a></li>
-                                <li><a href="/categorias/infantil.html">Infantil</a></li>
-                                <li><a href="/categorias/romance.html">Romance</a></li>
-                                <li><a href="/categorias/suspenso.html">Suspenso</a></li>
-                                <li><a href="/categorias/terror.html">Terror</a></li>
-
-                            </ul>
-                        </li>
-                        <!-- <li><a href="">ABOUT</a></li> -->
-                    </ul>
-                </div>
-
-                <div class="containerSearch">
-                    <input type="text" class="search-input" placeholder="Buscar...">
-                    <a href="#" class="search-lupa"><img src="/imagenes/search.png" alt=""></a>
-                </div>
-
-                <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt=""></button>
-                <nav class="nav" id="nav">
-                    <button class="cerrar-menu" id="cerrar"><img src="imagenes/x.png" alt=""></button>
-                    <img class="imgMenu" src="imagenes/footer.png" alt="">
-
-                    <ul class="nav-list">
-                        <input type="text" class="" placeholder="Buscar...">
-                        <hr>
-                        <li><a href="peliculas.html">PELICULAS</a></li>
-                        <li><a href="series.html">SERIES</a></li>
-                        <li><a href="">CATEGORIAS</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <hr>
-                    </ul>
-                </nav>
+    
+            <div class="containerSearch">
+              <input type="text" name="buscador" id="buscador" class="search-input" placeholder="Buscar...">
+              <a href="#" class="search-lupa"><img src="/imagenes/search.png" alt=""></a>
             </div>
+    
+            <button id="abrir" class="abrir-menu"><img src="imagenes/menu.png" alt="" style="margin-right: 2rem;"></button>
+            <nav class="nav" id="nav">
+              <button class="cerrar-menu" id="cerrar"><img src="imagenes/x.png" alt=""></button>
+              <img class="imgMenu" src="imagenes/footer.png" alt="">
+    
+              <ul class="nav-list">
+    
+                <input type="text" name="buscador" id="buscadorMenu" class="search-input-hamburguesa" placeholder="Buscar...">
+                <a href="#" class="search-lupa-hamburguesa"><img src="/imagenes/search.png" alt=""></a>
+    
+                <hr>
+                <li><a href="/index.html">Inicio </a></li>
+                <li><a href="/peliculas.html">Peliculas</a></li>
+                <li><a href="/series.html">Series</a></li>
+                <li><a href="#">Categorias</a>
+                  <ul>
+                    <li><a href="/categorias/accion.html">Accion</a></li>
+                    <li><a href="/categorias/comedia.html">Comedia</a></li>
+                    <li><a href="/categorias/familiar.html">Familiar</a></li>
+                    <li><a href="/categorias/infantil.html">Infantil</a></li>
+                    <li><a href="/categorias/romance.html">Romance</a></li>
+                    <li><a href="/categorias/suspenso.html">Suspenso</a></li>
+                    <li><a href="/categorias/terror.html">Terror</a></li>
+                  </ul>
+                </li>
+                <hr>
+              </ul>
+            </nav>
+          </div>
         </div>
-    </header>
+      </header>
 
     <main>
 
         <h2 class="title"> COMEDIA </h2>
         <div class="container">
             <br>
-            <div style="height: 50rem;" class="boxesMovies">
+            <div class="boxesMovies">
                 <div class="boxMovie">
-                <div class="boxProject">
-                    <figure>
-                        <img src="../imagenes/12.jpeg" alt="">
-                        <div class="capa">
-                            <h3>Son como niños</h3>
-                            <p>"La muerte del entrenador de baloncesto reúne a viejos amigos en el lugar donde ganaron
-                                un
-                                campeonato. Hablan de esposas, hijos y descubren que la edad no siempre significa
-                                madurez."</p>
+                    <div class="boxProject">
+                        <figure>
+                            <img src="../imagenes/12.jpeg" alt="">
+                            <div class="capa">
+                                <h3>Son como niños</h3>
+                                <p>"La muerte del entrenador de baloncesto reúne a viejos amigos en el lugar donde
+                                    ganaron
+                                    un
+                                    campeonato. Hablan de esposas, hijos y descubren que la edad no siempre significa
+                                    madurez."</p>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal"
+                        data-target="#videoModal" data-video-src="https://www.youtube.com/embed/yMEDiKD7cyE">
+                        Ver trailer </button>
+                    <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Encabezado del modal -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Trailer</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <!-- Contenido del modal (iframe con el video) -->
+                                <div class="modal-body">
+                                    <iframe id="videoIframe" width="100%" height="315" frameborder="0"
+                                        allowfullscreen></iframe>
+                                </div>
+
+                                <!-- Pie del modal -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+
+                            </div>
                         </div>
-                    </figure>
-                </div>
-  
-                <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/yMEDiKD7cyE">
-                    Ver trailer        </button>
-                    <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-              
-                              <!-- Encabezado del modal -->
-                              <div class="modal-header">
-                                  <h4 class="modal-title">Trailer</h4>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                                      <span aria-hidden="true">&times;</span>
-                                  </button>
-                              </div>
-              
-                              <!-- Contenido del modal (iframe con el video) -->
-                              <div class="modal-body">
-                                  <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
-                              </div>
-              
-                              <!-- Pie del modal -->
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                              </div>
-              
-                          </div>
-                      </div>
-                  </div>
+                    </div>
                 </div>
                 <div class="boxMovie">
-                <div class="boxProject">
-                    <figure>
-                        <img src="../imagenes/13.jpeg" alt="">
-                        <div class="capa">
-                            <h3>Mi pobre angelito</h3>
-                            <p>un niño llamado Kevin es olvidado accidentalmente por su familia durante las vacaciones
-                                de Navidad.
-                                Mientras está solo en casa, se enfrenta a dos ladrones torpes que intentan saquear su
-                                hogar</p>
-                        </div>
-                    </figure>
-                </div>
-  
-                <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/I-zoVUYHPMM">
-                    Ver trailer        </button>
+                    <div class="boxProject">
+                        <figure>
+                            <img src="../imagenes/13.jpeg" alt="">
+                            <div class="capa">
+                                <h3>Mi pobre angelito</h3>
+                                <p>un niño llamado Kevin es olvidado accidentalmente por su familia durante las
+                                    vacaciones
+                                    de Navidad.
+                                    Mientras está solo en casa, se enfrenta a dos ladrones torpes que intentan saquear
+                                    su
+                                    hogar</p>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal"
+                        data-target="#videoModal" data-video-src="https://www.youtube.com/embed/I-zoVUYHPMM">
+                        Ver trailer </button>
                 </div>
 
             </div>
@@ -167,18 +184,18 @@
 
             <div class="aboutLogo">
 
-                <img src="imagenes/footer.png" alt="">
+                <img src="/imagenes/footer.png" alt="">
             </div>
 
         </div>
-        <div class="footerCel">
+        <!-- <div class="footerCel">
             <img src="imagenes/footer.png" alt="">
-        </div>
+        </div> -->
 
     </footer>
-<script src="../modal.js"></script>
-    <script src="main.js"></script>
-    <script src="peliculas.js"></script>
+    <script src="/modal.js"></script>
+    <!-- <script src="main.js"></script>
+    <script src="peliculas.js"></script> -->
 </body>
 
 </html>

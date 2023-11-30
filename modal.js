@@ -28,3 +28,19 @@ function closeModal() {
       // Detener la reproducción del video
       videoIframe.src = videoSrc;
   });
+
+// // Primer modal
+// $('#videoModal1').on('show.bs.modal', function (event) {
+//   var button = $(event.relatedTarget);
+//   var videoSrc = button.data('video-src');
+//   var modal = $(this);
+//   modal.find('#videoIframe1').attr('src', videoSrc);
+// });
+
+// // Segundo modal
+// $('#videoModal2').on('show.bs.modal', function (event) {
+//   var button = $(event.relatedTarget);
+//   var videoSrc = button.data('video-src');
+//   var modal = $(this);
+//   modal.find('#videoIframe2').attr('src', videoSrc);
+// });
