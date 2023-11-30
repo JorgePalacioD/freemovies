@@ -412,21 +412,14 @@ footer {
 }
 
 
-#btn-primary {
-  width: 10rem;
-  height: 2rem;
-  background-color: rgb(48, 48, 66);
-  color: white;
-  cursor: pointer;
-  border: 2px solid #4874ec;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
-  border-radius: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
+.btn-primary {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  padding: 2rem !important;
+  margin-top: 4rem !important;
+  border-radius: 5rem !important;
+  width: 15rem !important;
+  font-size: 2rem !important;
+
 }
 
 
