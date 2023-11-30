@@ -302,4 +302,107 @@ $('#videoModal36').on('show.bs.modal', function (event) {
   var modal = $(this);
   modal.find('#videoIframe36').attr('src', videoSrc);
 });
+$('#videoModal41').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe41').attr('src', videoSrc);
+});
+$('#videoModal42').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe42').attr('src', videoSrc);
+});
+
+$('#videoModal43').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe43').attr('src', videoSrc);
+});
+
+$('#videoModal44').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe44').attr('src', videoSrc);
+});
+
+$('#videoModal45').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe45').attr('src', videoSrc);
+});
+
+$('#videoModal46').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe46').attr('src', videoSrc);
+});
+
+$('#videoModal47').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe47').attr('src', videoSrc);
+});
+
+$('#videoModal48').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe48').attr('src', videoSrc);
+});
+
+$('#videoModal49').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe49').attr('src', videoSrc);
+});
+
+$('#videoModal50').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe50').attr('src', videoSrc);
+});
+
+$('#videoModal51').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe51').attr('src', videoSrc);
+});
+
+$('#videoModal52').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe52').attr('src', videoSrc);
+});
+
+$('#videoModal53').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe53').attr('src', videoSrc);
+});
+
+$('#videoModal54').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe54').attr('src', videoSrc);
+});
+
+$('#videoModal55').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var videoSrc = button.data('video-src');
+  var modal = $(this);
+  modal.find('#videoIframe55').attr('src', videoSrc);
+});
 
