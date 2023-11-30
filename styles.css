@@ -461,7 +461,10 @@ footer {
     display: none;
   }
 
-  
+  .search-lupa{
+    display: none;
+  }  
+
   .containerTitle>h2 {
     font-size: 20px;
   }
@@ -511,8 +514,8 @@ footer {
   }
 
   .nav {
-    width: 80%;
-    height: 90%;
+    width: 35rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -524,6 +527,8 @@ footer {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     gap: 2rem;
     border-radius: 1rem;
+    z-index: 1;
+
   }
 
   .nav.visible {
@@ -532,21 +537,24 @@ footer {
   }
 
   .nav-list {
+    display: flex;
     flex-direction: column;
-    align-items: end;
-    display: block;
+    align-items: center;
     height: 8rem;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .nav-list>li>a {
     font-size: 20px;
   }
 
-  .search-lupa {
-    display: none;
+  .nav-list li ul{
+    width: 15rem;
+    text-align: center;
+    font-size: 1.9rem;
   }
 
+  
   .navbarMovies>a {
     display: none;
   }
@@ -554,16 +562,20 @@ footer {
   .nav-list>input {
     background-color: black;
     border: solid 1.5px white;
-    border-radius: 0.5rem;
+    border-radius: 5rem;
+    width: 27rem;
   }
+
+
+  .search-lupa-hamburguesa{
+    display: none;
+  }
+
+  
 
   .nav>img {
     width: 15rem;
     border-radius: 0.5rem;
-  }
-
-  .nav {
-    z-index: 1;
   }
 
   .boxProject:hover {
@@ -572,7 +584,8 @@ footer {
   }
 
   .nav>.imgMenu {
-    display: block;
+    display: flex;
+    margin-right: 5.2rem;
   }
 
   .containerFooter .about p {
@@ -583,8 +596,6 @@ footer {
 
 @media (max-width: 480px) {
 
-  
-  
   .modal-dialog {
     top: 50% !important;
     left: 50% !important;
@@ -640,8 +651,8 @@ footer {
 
   .abrir-menu,
   .cerrar-menu {
-    width: 5rem;
-    height: 2rem;
+    width: auto;
+    height: auto;
     display: block;
     background-color: transparent;
     border: 0;
@@ -656,17 +667,17 @@ footer {
     width: 2rem;
   }
 
+  
   .nav {
     opacity: 0;
     visibility: hidden;
   }
 
   .nav {
-    width: 80%;
-    height: 90%;
+    width: 25rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: end;
     position: absolute;
     top: 0;
     right: 0;
@@ -675,6 +686,8 @@ footer {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     gap: 2rem;
     border-radius: 1rem;
+    z-index: 1;
+
   }
 
   .nav.visible {
@@ -683,18 +696,23 @@ footer {
   }
 
   .nav-list {
-    flex-direction: column;
-    align-items: end;
-    display: block;
+    display: flex;
+    align-items: center;
     height: 8rem;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .nav-list>li>a {
     font-size: 20px;
   }
 
-  .search-lupa {
+  .nav-list li ul{
+    width: 15rem;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .search-lupa-hamburguesa {
     display: none;
   }
 
@@ -705,25 +723,24 @@ footer {
   .nav-list>input {
     background-color: black;
     border: solid 1.5px white;
-    border-radius: 0.5rem;
+    border-radius: 5rem;
+    width: 20rem;
   }
 
-  .nav>img {
+  .nav-list>img {
     width: 15rem;
     border-radius: 0.5rem;
   }
 
-  .nav {
-    z-index: 1;
-  }
-
+ 
   .boxProject:hover {
     transition: all 300ms ease-out;
     scale: 1.05;
   }
 
   .nav>.imgMenu {
-    display: block;
+    display: flex;
+    margin-right: 2rem;
   }
 
   .containerFooter {
