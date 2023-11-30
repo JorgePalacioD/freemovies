@@ -22,29 +22,18 @@
   <header>
     <div class="header">
       <div class="containerLogo">
-        <a href="index.html">
+        <a href="/intro.html">
           <img class="logo" src="imagenes/logo.png" alt="">
-          <!-- <img class="logoCel" src="imagenes/webIcon.png" alt=""> -->
         </a>
       </div>
 
       <div class="navbarMovies">
-        <!-- <a href="peliculas.html">
-          <h2 class="">Peliculas</h2>
-        </a>
-        <a href="series.html">
-          <h2 class="">Series</h2>
-        </a>
-        <a href="">
-          <h2 class="">Categorias</h2>
-        </a> -->
-
         <div id="header">
           <ul class="nav">
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/peliculas.html">Peliculas</a></li>
             <li><a href="/series.html">Series</a></li>
-            <li><a href="">Categorias</a>
+            <li><a href="#">Categorias</a>
               <ul>
                 <li><a href="/categorias/accion.html">Accion</a></li>
                 <li><a href="/categorias/comedia.html">Comedia</a></li>
@@ -70,13 +59,15 @@
           <img class="imgMenu" src="imagenes/footer.png" alt="">
 
           <ul class="nav-list">
-            <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
-            <hr>
 
-            <li><a href="index.html">Inicio </a></li>
-            <li><a href="peliculas.html">Peliculas</a></li>
-            <li><a href="series.html">Series</a></li>
-            <li><a href="">Categorias</a>
+            <input type="text" name="buscador" id="buscadorMenu" class="search-input-hamburguesa" placeholder="Buscar...">
+            <a href="#" class="search-lupa-hamburguesa"><img src="/imagenes/search.png" alt=""></a>
+
+            <hr>
+            <li><a href="/index.html">Inicio </a></li>
+            <li><a href="/peliculas.html">Peliculas</a></li>
+            <li><a href="/series.html">Series</a></li>
+            <li><a href="#">Categorias</a>
               <ul>
                 <li><a href="/categorias/accion.html">Accion</a></li>
                 <li><a href="/categorias/comedia.html">Comedia</a></li>
@@ -86,18 +77,13 @@
                 <li><a href="/categorias/suspenso.html">Suspenso</a></li>
                 <li><a href="/categorias/terror.html">Terror</a></li>
               </ul>
-            
             </li>
-            
-
-            
-
             <hr>
           </ul>
         </nav>
       </div>
     </div>
-  </header>
+  </header>  
   <main>
 
     <h2 class="title"> LO RECOMENDADO </h2>
@@ -127,7 +113,7 @@
           </div>
 
           <div class="item">
-            <img src="imagenes/4.jpeg" diseno">
+            <img src="imagenes/4.jpeg">
           </div>
 
 
@@ -159,9 +145,9 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/j82nrLNvplo">
+          <button type="button" id="btn-primary11" class="btn btn-primary" data-toggle="modal" data-target="#videoModal11" data-video-src="https://www.youtube.com/embed/j82nrLNvplo">
             Ver trailer        </button>
-            <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal" id="videoModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
       
@@ -175,7 +161,7 @@
       
                       <!-- Contenido del modal (iframe con el video) -->
                       <div class="modal-body">
-                          <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                          <iframe id="videoIframe11" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
                       </div>
       
                       <!-- Pie del modal -->
@@ -201,9 +187,9 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/FRrc2X4Uzm4">
+          <button type="button" id="btn-primary12" class="btn btn-primary" data-toggle="modal" data-target="#videoModal12" data-video-src="https://www.youtube.com/embed/FRrc2X4Uzm4">
             Ver trailer        </button>
-            <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal" id="videoModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
       
@@ -217,7 +203,7 @@
       
                       <!-- Contenido del modal (iframe con el video) -->
                       <div class="modal-body">
-                          <iframe id="videoIframe" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                          <iframe id="videoIframe12" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
                       </div>
       
                       <!-- Pie del modal -->
@@ -243,8 +229,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/5rIytmXOO7Q">
+          <button type="button" id="btn-primary13" class="btn btn-primary" data-toggle="modal" data-target="#videoModal13" data-video-src="https://www.youtube.com/embed/5rIytmXOO7Q">
             Ver trailer        </button>
+            <div class="modal" id="videoModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe13" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <h3 style="display: none;">Los croods 2</h3>
@@ -259,8 +270,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/tplddmYEgMM">
+          <button type="button" id="btn-primary14" class="btn btn-primary" data-toggle="modal" data-target="#videoModal14" data-video-src="https://www.youtube.com/embed/tplddmYEgMM">
             Ver trailer        </button>
+            <div class="modal" id="videoModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe14" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <h3 style="display: none;">El orfanato</h3>
@@ -276,8 +312,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/9qjHkkffOx8">
+          <button type="button" id="btn-primary15" class="btn btn-primary" data-toggle="modal" data-target="#videoModal15" data-video-src="https://www.youtube.com/embed/9qjHkkffOx8">
             Ver trailer        </button>
+            <div class="modal" id="videoModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe15" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         </div>
         <div class="boxesMovies">
@@ -292,8 +353,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/BrUTRhIvcQY">
+          <button type="button" id="btn-primary16" class="btn btn-primary" data-toggle="modal" data-target="#videoModal16" data-video-src="https://www.youtube.com/embed/BrUTRhIvcQY">
             Ver trailer        </button>
+            <div class="modal" id="videoModal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe16" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -306,8 +392,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/MgzHRIeaOL8">
+          <button type="button" id="btn-primary17" class="btn btn-primary" data-toggle="modal" data-target="#videoModal17" data-video-src="https://www.youtube.com/embed/MgzHRIeaOL8">
             Ver trailer        </button>
+            <div class="modal" id="videoModal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe17" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -320,8 +431,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/4J0Of6wqzxk">
+          <button type="button" id="btn-primary18" class="btn btn-primary" data-toggle="modal" data-target="#videoModal18" data-video-src="https://www.youtube.com/embed/4J0Of6wqzxk">
             Ver trailer        </button>
+            <div class="modal" id="videoModal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe18" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -334,8 +470,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/pdrPvHulyUY">
+          <button type="button" id="btn-primary19" class="btn btn-primary" data-toggle="modal" data-target="#videoModal19" data-video-src="https://www.youtube.com/embed/pdrPvHulyUY">
             Ver trailer        </button>
+            <div class="modal" id="videoModal19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe19" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -349,8 +510,33 @@
             </figure>
           </div>
           
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/MPywd1FVFd0">
+          <button type="button" id="btn-primary20" class="btn btn-primary" data-toggle="modal" data-target="#videoModal20" data-video-src="https://www.youtube.com/embed/MPywd1FVFd0">
             Ver trailer        </button>
+            <div class="modal" id="videoModal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe20" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         </div>
         
@@ -366,8 +552,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/umy5STfwMj0">
+          <button type="button" id="btn-primary21" class="btn btn-primary" data-toggle="modal" data-target="#videoModal21" data-video-src="https://www.youtube.com/embed/umy5STfwMj0">
             Ver trailer        </button>
+            <div class="modal" id="videoModal21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe21" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -380,8 +591,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/yMEDiKD7cyE">
+          <button type="button" id="btn-primary22" class="btn btn-primary" data-toggle="modal" data-target="#videoModal22" data-video-src="https://www.youtube.com/embed/yMEDiKD7cyE">
             Ver trailer        </button>
+            <div class="modal" id="videoModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe22" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -394,8 +630,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/I-zoVUYHPMM">
+          <button type="button" id="btn-primary23" class="btn btn-primary" data-toggle="modal" data-target="#videoModal23" data-video-src="https://www.youtube.com/embed/I-zoVUYHPMM">
             Ver trailer        </button>
+            <div class="modal" id="videoModal23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe23" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -408,8 +669,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/OCDhMOrCEoc">
+          <button type="button" id="btn-primary24" class="btn btn-primary" data-toggle="modal" data-target="#videoModal24" data-video-src="https://www.youtube.com/embed/OCDhMOrCEoc">
             Ver trailer        </button>
+            <div class="modal" id="videoModal24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe24" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
         </div>
         <div class="boxMovie">
           <div id="boxProject" class="boxProject">
@@ -422,8 +708,33 @@
               </div>
             </figure>
           </div>
-          <button type="button" id="btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/DTUsaltziFA">
+          <button type="button" id="btn-primary25" class="btn btn-primary" data-toggle="modal" data-target="#videoModal25" data-video-src="https://www.youtube.com/embed/DTUsaltziFA">
             Ver trailer        </button>
+            <div class="modal" id="videoModal25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+      
+                      <!-- Encabezado del modal -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+      
+                      <!-- Contenido del modal (iframe con el video) -->
+                      <div class="modal-body">
+                          <iframe id="videoIframe25" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+                      </div>
+      
+                      <!-- Pie del modal -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+      
+                  </div>
+              </div>
+          </div>
           </div>
         </div>
       
